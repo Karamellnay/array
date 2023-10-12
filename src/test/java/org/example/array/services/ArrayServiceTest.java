@@ -10,7 +10,7 @@ public class ArrayServiceTest {
         ArrayService service = new ArrayService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.sum(sales);
-        long expected = 8+ 15 + 13 + 15 + 17 + 20 +19 + 20 + 7 + 14 + 14 + 18;
+        long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
 
         Assertions.assertEquals(expected, actual);
     }
@@ -20,7 +20,7 @@ public class ArrayServiceTest {
         ArrayService service = new ArrayService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.average(sales);
-        long expected = (8+ 15 + 13 + 15 + 17 + 20 +19 + 20 + 7 + 14 + 14 + 18) / 12;
+        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
 
         Assertions.assertEquals(expected, actual);
     }
@@ -46,7 +46,7 @@ public class ArrayServiceTest {
     }
 
     @Test
-    public void BeLowAverage() {
+    public void beLowAverage() {
         ArrayService service = new ArrayService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.monthsBeLowAverage(sales);
@@ -56,7 +56,7 @@ public class ArrayServiceTest {
     }
 
     @Test
-    public void AboveAverage() {
+    public void aboveAverage() {
         ArrayService service = new ArrayService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.monthsAboveAverage(sales);
